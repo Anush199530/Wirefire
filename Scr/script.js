@@ -60,7 +60,7 @@ function displayWeathercondition(response) {
 }
 
 function searchCityLocation(city) {
-  let apiKey = "537a0e0e7ac70ad389445679f87e0b6e ";
+  let apiKey = "537a0e0e7ac70ad389445679f87e0b6e";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayWeathercondition);
@@ -73,7 +73,7 @@ function changeCity(event) {
   searchCity.addEventListener("submit", changeCity);
   function displayCurrentloc(event) {
     event.preventDefault();
-    let apiKey = "537a0e0e7ac70ad389445679f87e0b6e ";
+    let apiKey = "537a0e0e7ac70ad389445679f87e0b6e";
     let units = "metric";
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
