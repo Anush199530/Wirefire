@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  bottom: 40px;
+  text-align: right;
+}
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 74px;
+  font-weight: 400;
+  line-height: 1;
+}
+.units {
+  position: relative;
+  font-size: 20px;
+  top: -34px;
+}
+.currentinfo {
+  text-align: right;
+  list-style: none;
+  top-margin: 25px;
+  padding-left: none;
+}
+
+.rainweather {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
