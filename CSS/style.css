@@ -1,30 +1,21 @@
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.container {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  background-image: url ("img/pexels.jpg");
+  background-image: url ("img/pexels-325185.webp");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 h1 {
   color: black;
   font-size: 30px;
-  position: fixed;
+  position: relative;
   top: 20px;
   bottom: 40px;
   text-align: right;
 }
-img {
-  width: 50%;
-  display: block;
-  margin: 0%;
-  position: absolute;
-}
+
 .temperature {
   color: rgb(33, 33, 33);
   font-size: 74px;
@@ -32,7 +23,7 @@ img {
   line-height: 1;
 }
 .units {
-  position: fixed;
+  position: relative;
   font-size: 20px;
   top: -34px;
 }
@@ -48,6 +39,6 @@ img {
   margin: 0 auto;
   text-align: left;
 }
-.Open-source {
-  text-align: center;
+.openSource {
+  text-align: right;
 }
