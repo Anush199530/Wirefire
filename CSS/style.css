@@ -1,14 +1,29 @@
 body {
   font-family: "Roboto", sans-serif;
-  
 }
+
+.container {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url ("img/pexels.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 h1 {
   color: black;
   font-size: 30px;
-  position: relative;
+  position: fixed;
   top: 20px;
   bottom: 40px;
   text-align: right;
+}
+img {
+  width: 50%;
+  display: block;
+  margin: 0%;
+  position: absolute;
 }
 .temperature {
   color: rgb(33, 33, 33);
@@ -17,7 +32,7 @@ h1 {
   line-height: 1;
 }
 .units {
-  position: relative;
+  position: fixed;
   font-size: 20px;
   top: -34px;
 }
