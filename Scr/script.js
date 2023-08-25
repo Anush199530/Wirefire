@@ -85,5 +85,3 @@ function changeCity(event) {
   let buttonCurrentloc = document.querySelector("#buttonCurrentloc");
   buttonCurrentloc.addEventListener("click", displayCurrentloc);
 }
-searchCityLocation("Brussels");
-formatDate();
