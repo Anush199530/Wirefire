@@ -1,7 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
 background-image: url("../img/pexels-325185.webp");
-
+background-repeat: no-repeat;
+background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
