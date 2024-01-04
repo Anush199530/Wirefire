@@ -44,6 +44,7 @@ function formatDate() {
 let searchCity = document.querySelector("#searchengine");
 searchCity.addEventListener("submit", changeCity);
 
+function showPosition(position) {}
 function displayWeathercondition(response) {
   console.log(response.data);
   console.log(response.data.name);
@@ -62,7 +63,9 @@ function displayWeathercondition(response) {
 function searchCityLocation(city) {
   let apiKey = "537a0e0e7ac70ad389445679f87e0b6e";
   let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   axios.get(apiUrl).then(displayWeathercondition);
 }
 function changeCity(event) {
@@ -85,3 +88,5 @@ function changeCity(event) {
   let buttonCurrentloc = document.querySelector("#buttonCurrentloc");
   buttonCurrentloc.addEventListener("click", displayCurrentloc);
 }
+
+navigator.geolocation.getCurrentPosition(showPosition);
